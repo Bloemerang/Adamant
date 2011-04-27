@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlexiMath Tests", "FlexiMath Tests\FlexiMath Tests.vcxproj", "{02A36555-EE3D-4E6E-B34F-6A371146582A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlexiGraphics Tests", "FlexiGraphics Tests\FlexiGraphics Tests.vcxproj", "{906DEDC8-6E14-425C-87EF-078A4806AE6E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5BDEAF55-E0FB-4FF0-A080-B3FEB1F14299} = {5BDEAF55-E0FB-4FF0-A080-B3FEB1F14299}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlexiUtil", "..\Source\FlexiUtil\FlexiUtil.vcxproj", "{5BDEAF55-E0FB-4FF0-A080-B3FEB1F14299}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02A36555-EE3D-4E6E-B34F-6A371146582A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{02A36555-EE3D-4E6E-B34F-6A371146582A}.Debug|Win32.Build.0 = Debug|Win32
+		{02A36555-EE3D-4E6E-B34F-6A371146582A}.Release|Win32.ActiveCfg = Release|Win32
+		{02A36555-EE3D-4E6E-B34F-6A371146582A}.Release|Win32.Build.0 = Release|Win32
+		{906DEDC8-6E14-425C-87EF-078A4806AE6E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{906DEDC8-6E14-425C-87EF-078A4806AE6E}.Debug|Win32.Build.0 = Debug|Win32
+		{906DEDC8-6E14-425C-87EF-078A4806AE6E}.Release|Win32.ActiveCfg = Release|Win32
+		{906DEDC8-6E14-425C-87EF-078A4806AE6E}.Release|Win32.Build.0 = Release|Win32
+		{5BDEAF55-E0FB-4FF0-A080-B3FEB1F14299}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5BDEAF55-E0FB-4FF0-A080-B3FEB1F14299}.Debug|Win32.Build.0 = Debug|Win32
+		{5BDEAF55-E0FB-4FF0-A080-B3FEB1F14299}.Release|Win32.ActiveCfg = Release|Win32
+		{5BDEAF55-E0FB-4FF0-A080-B3FEB1F14299}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

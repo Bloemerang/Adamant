@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <BaseDir>$(MSBuildThisFileDirectory)\..</BaseDir>
+    <ThirdPartyDir>$(BaseDir)\3rdParty</ThirdPartyDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(BaseDir)\Bin\$(ProjectName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IntDir>$(BaseDir)\Obj\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(BaseDir)\Include;$(ThirdPartyDir)\UnitTest</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <Link>
+      <AdditionalLibraryDirectories>$(ThirdPartyDir)\UnitTest</AdditionalLibraryDirectories>
+      <AdditionalDependencies>UnitTest_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="BaseDir">
+      <Value>$(BaseDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ThirdPartyDir">
+      <Value>$(ThirdPartyDir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
