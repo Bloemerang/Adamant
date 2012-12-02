@@ -146,11 +146,6 @@ void Vector3f::set(const float x, const float y, const float z)
     this->z = z;
 }
 
-const float* Vector3f::adr() const
-{
-    return reinterpret_cast<const float*>(this);
-}
-
 bool Vector3f::equals(const Vector3f& that, const float tolerance) const
 {
     return !(   !areEqual(this->x, that.x, tolerance)

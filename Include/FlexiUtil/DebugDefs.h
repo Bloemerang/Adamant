@@ -8,6 +8,7 @@
  * @lastedit 12/16/2010
  */
 #include <functional>
+#include <cassert>
 
 #ifdef DEBUG
 #define FLEXI_DEBUG

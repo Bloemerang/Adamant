@@ -16,6 +16,7 @@ namespace fpu_math {
 // Forward Declare
 class RotationMatrix;
 class Matrix4x3;
+class Matrix4x4;
 
 Vector3f  operator*(const Vector3f&, const Matrix4x3&);
 Vector3f& operator*=(Vector3f&, const Matrix4x3&);

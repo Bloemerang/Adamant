@@ -53,7 +53,7 @@ public:
     Vector4f& normalized();
     Vector4f getNormalized() const;
 
-    const float* adr() const;
+    const float* adr() const { return reinterpret_cast<const float*>(this); }
     
     bool equals(const Vector4f&, const float tolerance = FLOAT_TOLERANCE) const;
     bool isZeroVec(const float tolerance = FLOAT_TOLERANCE) const;

@@ -46,4 +46,6 @@ using namespace fpu_math;
 } // namespace math
 } // namespace flexi
 
+#endif // !USE_SIMD
+
 #endif // FLEXI_MATH_H_

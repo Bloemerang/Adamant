@@ -242,7 +242,7 @@ public: /***************************** Methods ********************************/
      * 
      * Useful for interacting with APIs which use arrays to represent vectors.
      */
-    const float* adr() const;
+    const float* adr() const { return reinterpret_cast<const float*>(this); }
 
     /**
      * @brief Checks whether this Vector3f is equal to that specified within a
