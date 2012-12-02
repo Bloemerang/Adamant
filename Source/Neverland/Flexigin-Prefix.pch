@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'Flexigin' target in the 'Flexigin' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#else
+// TODO
+#endif
+
+#include <assert.h>
