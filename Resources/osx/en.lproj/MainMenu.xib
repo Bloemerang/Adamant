@@ -1385,7 +1385,7 @@
 																<int key="NSTCFlags">1</int>
 															</object>
 															<object class="NSTextViewSharedData" key="NSSharedData">
-																<int key="NSFlags">12135</int>
+																<int key="NSFlags">67120999</int>
 																<int key="NSTextCheckingTypes">0</int>
 																<nil key="NSMarkedAttributes"/>
 																<object class="NSColor" key="NSBackgroundColor" id="767510773">
@@ -1718,7 +1718,7 @@ wGw</bytes>
 																<int key="NSTCFlags">1</int>
 															</object>
 															<object class="NSTextViewSharedData" key="NSSharedData">
-																<int key="NSFlags">12135</int>
+																<int key="NSFlags">67120999</int>
 																<int key="NSTextCheckingTypes">0</int>
 																<nil key="NSMarkedAttributes"/>
 																<reference key="NSBackgroundColor" ref="767510773"/>
@@ -2225,7 +2225,6 @@ wGw</bytes>
 													<string key="NSFrame">{{784, 1}, {15, 180}}</string>
 													<reference key="NSSuperview" ref="923464195"/>
 													<reference key="NSWindow"/>
-													<reference key="NSNextKeyView"/>
 													<string key="NSReuseIdentifierKey">_NS:83</string>
 													<reference key="NSTarget" ref="923464195"/>
 													<string key="NSAction">_doScroller:</string>
@@ -2379,9 +2378,9 @@ wGw</bytes>
 																<string key="NSContents"/>
 																<string key="NSCellIdentifier">_NS:9</string>
 																<reference key="NSControlView" ref="269497537"/>
-																<double key="NSMaxValue">100</double>
+																<double key="NSMaxValue">1</double>
 																<double key="NSMinValue">0.0</double>
-																<double key="NSValue">50</double>
+																<double key="NSValue">1</double>
 																<double key="NSAltIncValue">0.0</double>
 																<int key="NSNumberOfTickMarks">0</int>
 																<int key="NSTickMarkPosition">0</int>
@@ -2424,9 +2423,9 @@ wGw</bytes>
 																<string key="NSContents"/>
 																<string key="NSCellIdentifier">_NS:9</string>
 																<reference key="NSControlView" ref="345742354"/>
-																<double key="NSMaxValue">100</double>
+																<double key="NSMaxValue">1</double>
 																<double key="NSMinValue">0.0</double>
-																<double key="NSValue">50</double>
+																<double key="NSValue">1</double>
 																<double key="NSAltIncValue">0.0</double>
 																<int key="NSNumberOfTickMarks">0</int>
 																<int key="NSTickMarkPosition">0</int>
@@ -2460,7 +2459,6 @@ wGw</bytes>
 															<string key="NSFrame">{{61, 11}, {21, 79}}</string>
 															<reference key="NSSuperview" ref="801701947"/>
 															<reference key="NSWindow"/>
-															<reference key="NSNextKeyView"/>
 															<string key="NSReuseIdentifierKey">_NS:9</string>
 															<bool key="NSEnabled">YES</bool>
 															<object class="NSSliderCell" key="NSCell" id="343347322">
@@ -2469,9 +2467,9 @@ wGw</bytes>
 																<string key="NSContents"/>
 																<string key="NSCellIdentifier">_NS:9</string>
 																<reference key="NSControlView" ref="697290574"/>
-																<double key="NSMaxValue">100</double>
+																<double key="NSMaxValue">1</double>
 																<double key="NSMinValue">0.0</double>
-																<double key="NSValue">50</double>
+																<double key="NSValue">1</double>
 																<double key="NSAltIncValue">0.0</double>
 																<int key="NSNumberOfTickMarks">0</int>
 																<int key="NSTickMarkPosition">0</int>
@@ -2542,17 +2540,6 @@ wGw</bytes>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<int key="NSWindowCollectionBehavior">256</int>
 				<bool key="NSWindowIsRestorable">YES</bool>
-			</object>
-			<object class="NSOpenGLView" id="518552622">
-				<nil key="NSNextResponder"/>
-				<int key="NSvFlags">268</int>
-				<string key="NSFrameSize">{505, 396}</string>
-				<string key="NSReuseIdentifierKey">_NS:24</string>
-				<object class="NSOpenGLPixelFormat" key="NSPixelFormat">
-					<object class="NSMutableData" key="NSPixelAttributes">
-						<bytes key="NS.bytes">AAAAYAAAAAA</bytes>
-					</object>
-				</object>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -3262,52 +3249,28 @@ wGw</bytes>
 					<int key="connectionID">532</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">green_slider</string>
-						<reference key="source" ref="518552622"/>
-						<reference key="destination" ref="345742354"/>
+					<object class="IBActionConnection" key="connection">
+						<string key="label">redSliderChanged:</string>
+						<reference key="source" ref="744500054"/>
+						<reference key="destination" ref="269497537"/>
 					</object>
-					<int key="connectionID">894</int>
+					<int key="connectionID">1091</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">greenSliderChanged:</string>
-						<reference key="source" ref="518552622"/>
+						<reference key="source" ref="744500054"/>
 						<reference key="destination" ref="345742354"/>
 					</object>
-					<int key="connectionID">785</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">redSliderChanged:</string>
-						<reference key="source" ref="518552622"/>
-						<reference key="destination" ref="269497537"/>
-					</object>
-					<int key="connectionID">783</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">red_slider</string>
-						<reference key="source" ref="518552622"/>
-						<reference key="destination" ref="269497537"/>
-					</object>
-					<int key="connectionID">895</int>
+					<int key="connectionID">1092</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">blueSliderChanged:</string>
-						<reference key="source" ref="518552622"/>
+						<reference key="source" ref="744500054"/>
 						<reference key="destination" ref="697290574"/>
 					</object>
-					<int key="connectionID">784</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">blue_slider</string>
-						<reference key="source" ref="518552622"/>
-						<reference key="destination" ref="697290574"/>
-					</object>
-					<int key="connectionID">893</int>
+					<int key="connectionID">1093</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -5062,11 +5025,6 @@ wGw</bytes>
 						<reference key="parent" ref="120466454"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">584</int>
-						<reference key="object" ref="518552622"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">898</int>
 						<reference key="object" ref="744500054"/>
 						<reference key="parent" ref="38729325"/>
@@ -5985,8 +5943,6 @@ wGw</bytes>
 				<string key="581.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="582.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="583.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="584.CustomClassName">OpenGLViewAdapter</string>
-				<string key="584.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="72.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="73.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="75.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -6120,7 +6076,7 @@ wGw</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1090</int>
+			<int key="maxID">1093</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -6241,6 +6197,17 @@ wGw</bytes>
 				<object class="IBPartialClassDescription">
 					<string key="className">ProgramEditorWindow</string>
 					<string key="superclassName">NSWindow</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">build:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">build:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">build:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="m_fragment_shader_view">NSTextView</string>
 						<string key="m_output_view">NSTextView</string>

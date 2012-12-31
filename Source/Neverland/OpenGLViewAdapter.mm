@@ -12,13 +12,6 @@
 
 - (void)prepareOpenGL
 {
-    [red_slider   setMaxValue:1.0];
-    [red_slider   setFloatValue:1.0];
-    [green_slider setMaxValue:1.0];
-    [green_slider setFloatValue:1.0];
-    [blue_slider  setMaxValue:1.0];
-    [blue_slider  setFloatValue:1.0];
-
     // Enable vsync
     GLint swap_interval = 1;
     [[self openGLContext] setValues:&swap_interval forParameter:NSOpenGLCPSwapInterval];
@@ -26,6 +19,8 @@
     // Setup the actual GL class
     gl_view = new Neverland;
     gl_view->setClearColor(Color4f(1.0f, 1.0f, 1.0f));
+
+    NSLog(@"%s %p: Exit with gl_view %p", __FUNCTION__, self, gl_view);
 }
 
 - (void)drawRect:(NSRect)dirty_rect
@@ -43,7 +38,7 @@
 
 - (IBAction)redSliderChanged:(id)slider
 {
-    NSLog(@"Red slider changed value to %f", [slider floatValue]);
+    NSLog(@"%s %p: Red slider changed value to %f", __FUNCTION__, self, [slider floatValue]);
 
     auto clear_color = gl_view->clearColor();
     clear_color.r = [slider floatValue];
