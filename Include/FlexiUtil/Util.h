@@ -9,6 +9,8 @@
 #ifndef Flexigin_Util_h
 #define Flexigin_Util_h
 
+#include <cstdlib>
+
 #define OPEN_FLEXI_NAMESPACE                            \
     namespace flexi {
 #define OPEN_FLEXI_NAMESPACE1(first)                    \
@@ -22,5 +24,22 @@
 #define CLOSE_FLEXI_NAMESPACE1()        }}
 #define CLOSE_FLEXI_NAMESPACE2()        }}}
 #define CLOSE_FLEXI_NAMESPACE3()        }}}}
+
+#define RETURN_ON_ALLOC_FAILURE(new_memory, failure_value) do {                          \
+    if ((new_memory) == nullptr) {                                                       \
+        assert(!"Memory allocation failure");                                            \
+        return failure_value;                                                            \
+    }                                                                                    \
+} while (false)
+
+#define countof(ar) ( sizeof(ar) / sizeof((ar)[0]) )
+
+OPEN_FLEXI_NAMESPACE1(util)
+
+struct Deallocate {
+    void operator()(void* memory) { free(memory); }
+};
+
+CLOSE_FLEXI_NAMESPACE1()
 
 #endif

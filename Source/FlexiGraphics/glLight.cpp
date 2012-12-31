@@ -7,7 +7,7 @@
 //
 #include "glLight.h"
 
-OPEN_FLEXI_NAMESPACE1(gl)
+OPEN_FLEXI_NAMESPACE2(graphics, gl)
 
 Light::Light
 (
@@ -40,4 +40,4 @@ Light::turnOff()
     glDisable(GL_LIGHT0);
 }
 
-CLOSE_FLEXI_NAMESPACE1()
+CLOSE_FLEXI_NAMESPACE2()

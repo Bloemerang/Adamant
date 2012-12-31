@@ -108,9 +108,9 @@ void Neverland::draw(unsigned width, unsigned height)
 }
 
 #define UPDATE_STATE(STATE, code...) if (m_dirty_state.STATE) { \
-    cout << "Updating " #STATE << endl;                      \
-    code;                                                    \
-    m_dirty_state.STATE = false;                             \
+    cout << "Updating " #STATE << endl;                         \
+    code;                                                       \
+    m_dirty_state.STATE = false;                                \
 }
 
 void Neverland::updateDrawState()

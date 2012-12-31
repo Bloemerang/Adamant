@@ -13,7 +13,7 @@
 #include "Util.h"
 #include "FlexiMath.h"
 
-OPEN_FLEXI_NAMESPACE1(gl)
+OPEN_FLEXI_NAMESPACE2(graphics, gl)
 
 using namespace flexi::math;
 
@@ -33,6 +33,6 @@ private:
     bool m_enabled;
 };
 
-CLOSE_FLEXI_NAMESPACE1()
+CLOSE_FLEXI_NAMESPACE2()
 
 #endif

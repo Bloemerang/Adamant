@@ -9,6 +9,7 @@
  */
 #include <functional>
 #include <cassert>
+#include <iostream>
 
 #ifdef DEBUG
 #define FLEXI_DEBUG
@@ -58,6 +59,44 @@ inline void _flexi_assert(const bool expr,
 #define flexiAssert(expr) //(flexi::util::_flexi_assert(expr, __FILE__, __LINE__))
 /// Calls _flexi_assert with the file and line number and specified failure message
 #define flexiAssertM(expr, message) //(flexi::util::_flexi_assert(expr, __FILE__, __LINE__, message))
+
+#define FLEXI_TRACE_PROLOGUE()   std::cout << "In " << __FUNCTION__ << " @" << __LINE__ << ": "
+#define FLEXI_TRACE_ARG(arg, end) #arg << ' ' << arg << end
+
+#define FLEXI_TRACE1(arg) do {                                                           \
+    FLEXI_TRACE_PROLOGUE();                                                              \
+    std::cout << '(' << FLEXI_TRACE_ARG(arg, ')') << std::endl                           \
+} while (0)
+    
+#define FLEXI_TRACE2(arg1, arg2) do {                                                    \
+    FLEXI_TRACE_PROLOGUE();                                                              \
+    std::cout << '(' << FLEXI_TRACE_ARG(arg1, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg2, ')') << std::endl                          \
+} while (0)
+
+#define FLEXI_TRACE3(arg1, arg2, arg3) do {                                              \
+    FLEXI_TRACE_PROLOGUE();                                                              \
+    std::cout << '(' << FLEXI_TRACE_ARG(arg1, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg2, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg3, ')') << std::endl                          \
+} while (0)
+
+#define FLEXI_TRACE4(arg1, arg2, arg3, arg4) do {                                        \
+    FLEXI_TRACE_PROLOGUE();                                                              \
+    std::cout << '(' << FLEXI_TRACE_ARG(arg1, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg2, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg3, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg4, ')') << std::endl                          \
+} while (0)
+
+#define FLEXI_TRACE5(arg1, arg2, arg3, arg4, arg5) do {                                  \
+    FLEXI_TRACE_PROLOGUE();                                                              \
+    std::cout << '(' << FLEXI_TRACE_ARG(arg1, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg2, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg3, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg4, ' ')                                       \
+                     << FLEXI_TRACE_ARG(arg5, ')') << std::endl                          \
+} while (0)
 
 #else
 

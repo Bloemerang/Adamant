@@ -8,8 +8,10 @@
 #ifndef __Flexigin__Neverland__
 #define __Flexigin__Neverland__
 
+#include <memory>
 #include "Camera.h"
 #include "glLight.h"
+#include "glProgram.h"
 
 using namespace flexi;
 using namespace flexi::graphics;
@@ -40,6 +42,7 @@ protected:
 private:
     Camera m_camera;
     gl::Light m_light;
+    gl::Program::Ptr m_program;
     Color4f m_clear_color;
 
     union DirtyState{
