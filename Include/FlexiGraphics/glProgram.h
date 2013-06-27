@@ -28,7 +28,7 @@ struct Program {
     // TODO: Support the other shader types and allow mixing and matching between programs
     // if it makes sense in practice.
     static inline Ptr make(const char* vertex_shader,
-                                                const char* fragment_shader)
+                           const char* fragment_shader)
     {
         Ptr program = Ptr(new Program(vertex_shader, fragment_shader));
 

@@ -23,8 +23,13 @@
 		1B8545CE166AF52000D6E8A5 /* glLight.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8545CD166AF52000D6E8A5 /* glLight.h */; };
 		1B8545D1166AF55B00D6E8A5 /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8545D0166AF55B00D6E8A5 /* Util.h */; };
 		1B8545D3166B006B00D6E8A5 /* glLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B8545D2166B006B00D6E8A5 /* glLight.cpp */; };
+		1B8D63C916928C25001EBB84 /* glVertexArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8D63C816928C25001EBB84 /* glVertexArray.h */; };
+		1B8D63CC16928D66001EBB84 /* glVertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B8D63CB16928D66001EBB84 /* glVertexArray.cpp */; };
 		1B90FD4D167EC94A008B40C1 /* ProgramEditorWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B90FD4C167EC94A008B40C1 /* ProgramEditorWindow.mm */; };
 		1BB7E48B1691303D00835F7F /* ResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB7E48A1691303D00835F7F /* ResourceLoader.h */; };
+		1BC8405C1691F41300D60446 /* glRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC8405B1691F41300D60446 /* glRenderer.h */; };
+		1BC8405F1691FB3A00D60446 /* glObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC8405E1691FB3A00D60446 /* glObject.h */; };
+		1BC84061169200B200D60446 /* glRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BC84060169200B200D60446 /* glRenderer.cpp */; };
 		1BF3087416617CBE0021D9E1 /* MathUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B7674B9165E741E00C70579 /* MathUtil.cpp */; };
 		1BF3087516617CBE0021D9E1 /* Matrix4x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B7674BA165E741E00C70579 /* Matrix4x3.cpp */; };
 		1BF3087616617CBE0021D9E1 /* Matrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B7674BB165E741E00C70579 /* Matrix4x4.cpp */; };
@@ -111,9 +116,14 @@
 		1B8545CD166AF52000D6E8A5 /* glLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glLight.h; path = Include/FlexiGraphics/glLight.h; sourceTree = SOURCE_ROOT; };
 		1B8545D0166AF55B00D6E8A5 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = Include/FlexiUtil/Util.h; sourceTree = SOURCE_ROOT; };
 		1B8545D2166B006B00D6E8A5 /* glLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glLight.cpp; path = Source/FlexiGraphics/glLight.cpp; sourceTree = SOURCE_ROOT; };
+		1B8D63C816928C25001EBB84 /* glVertexArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glVertexArray.h; path = Include/FlexiGraphics/glVertexArray.h; sourceTree = SOURCE_ROOT; };
+		1B8D63CB16928D66001EBB84 /* glVertexArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glVertexArray.cpp; path = Source/FlexiGraphics/glVertexArray.cpp; sourceTree = SOURCE_ROOT; };
 		1B90FD4B167EC94A008B40C1 /* ProgramEditorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgramEditorWindow.h; path = Source/Neverland/ProgramEditorWindow.h; sourceTree = "<group>"; };
 		1B90FD4C167EC94A008B40C1 /* ProgramEditorWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ProgramEditorWindow.mm; path = Source/Neverland/ProgramEditorWindow.mm; sourceTree = "<group>"; };
 		1BB7E48A1691303D00835F7F /* ResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceLoader.h; path = Include/FlexiAssets/ResourceLoader.h; sourceTree = SOURCE_ROOT; };
+		1BC8405B1691F41300D60446 /* glRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glRenderer.h; path = Include/FlexiGraphics/glRenderer.h; sourceTree = SOURCE_ROOT; };
+		1BC8405E1691FB3A00D60446 /* glObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glObject.h; path = Include/FlexiGraphics/glObject.h; sourceTree = SOURCE_ROOT; };
+		1BC84060169200B200D60446 /* glRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glRenderer.cpp; path = Source/FlexiGraphics/glRenderer.cpp; sourceTree = SOURCE_ROOT; };
 		1BD11E2816602A6C008B0AA7 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = Include/FlexiGraphics/Camera.h; sourceTree = SOURCE_ROOT; };
 		1BD11E2A16602B28008B0AA7 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = Source/FlexiGraphics/Camera.cpp; sourceTree = SOURCE_ROOT; };
 		1BF3086F16617C9A0021D9E1 /* libFlexigin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFlexigin.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,6 +291,11 @@
 				1B8545D2166B006B00D6E8A5 /* glLight.cpp */,
 				1B6DB736166C0301004862EA /* glProgram.h */,
 				1B6DB744166C71AA004862EA /* glProgram.cpp */,
+				1BC8405B1691F41300D60446 /* glRenderer.h */,
+				1BC84060169200B200D60446 /* glRenderer.cpp */,
+				1BC8405E1691FB3A00D60446 /* glObject.h */,
+				1B8D63C816928C25001EBB84 /* glVertexArray.h */,
+				1B8D63CB16928D66001EBB84 /* glVertexArray.cpp */,
 			);
 			name = FlexiGraphics;
 			sourceTree = "<group>";
@@ -310,6 +325,9 @@
 				1B6DB737166C0301004862EA /* glProgram.h in Headers */,
 				1B6DB743166C15E7004862EA /* Resource.h in Headers */,
 				1BB7E48B1691303D00835F7F /* ResourceLoader.h in Headers */,
+				1BC8405C1691F41300D60446 /* glRenderer.h in Headers */,
+				1BC8405F1691FB3A00D60446 /* glObject.h in Headers */,
+				1B8D63C916928C25001EBB84 /* glVertexArray.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +438,8 @@
 				1BF3087B16617CBE0021D9E1 /* Vector4f.cpp in Sources */,
 				1B8545D3166B006B00D6E8A5 /* glLight.cpp in Sources */,
 				1B6DB745166C71AA004862EA /* glProgram.cpp in Sources */,
+				1BC84061169200B200D60446 /* glRenderer.cpp in Sources */,
+				1B8D63CC16928D66001EBB84 /* glVertexArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

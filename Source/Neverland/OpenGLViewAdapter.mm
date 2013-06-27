@@ -29,8 +29,10 @@
         dirty_rect.origin.x, dirty_rect.origin.y,
         dirty_rect.size.width, dirty_rect.size.height);
 
-    assert(gl_view);
-
+    // FIXME: We need to sync the slider values with the GL view before the first draw.
+    // I'm not sure whether there is a method we can override for first-time initialization
+    // that has the sliders available. We could just read the clear color every time we
+    // draw, but 99% of the time it would be redundant work.
     gl_view->draw(dirty_rect.size.width, dirty_rect.size.height);
 
     [[self openGLContext] flushBuffer];
